@@ -1,0 +1,14 @@
+[package]
+name = "pyo3_bigint_overflow"
+version = "0.1.0"
+authors = ["Jacob Lifshay <programmerjake@gmail.com>"]
+edition = "2018"
+publish = false
+
+[lib]
+name = "pyo3_bigint_overflow"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+pyo3 = { git = "https://github.com/PyO3/pyo3.git", features = ["num-bigint", "extension-module"] }
+num-bigint = "0.2"
